@@ -241,13 +241,24 @@ body {
 p {
   padding-left: 10px;
   padding-right: 10px;
-  text-align: center; }
+  text-align: center;
+  font-family: "Cuprum"; }
+
+h2 {
+  font-family: "Shadows Into Light";
+  color: #ee77b6;
+  text-shadow: .5px .5px 1px #000000; }
 
 h3 {
+  font-family: "Cuprum";
   text-align: center; }
 
 h4 {
+  font-family: "Cuprum";
   text-align: center; }
+
+h5 {
+  font-family: "Cuprum"; }
 
 .col-3 {
   background: #f7afff;

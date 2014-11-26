@@ -39,12 +39,29 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
+    font-family: $f-family2;
+}
+
+h2{
+    font-family: $f-familyh2;
+    color: #ee77b6;
+    text-shadow: .5px .5px 1px #000000;
+    
+    
+    
 }
 h3 {
+    font-family: $f-family2;
     text-align: center;
 }
 h4 {
+    font-family: $f-family2;
     text-align: center;
+}
+
+h5{
+    font-family: $f-family2;
+    
 }
 
 

@@ -20,7 +20,7 @@ html {
     border-bottom-left-radius: 3rem;
     text-align: center;
     height: 180px;
-    border-bottom: 5px solid #916D8E;
+    border-bottom: 5px solid #cbbbbf;
     margin-top: 10px;
     margin-bottom: 25px;
     background-color: $colorhf;
@@ -36,11 +36,17 @@ p {
     padding-right: 10px;
     text-align: center;
     font-family: $f-family2;
+    opacity: 0;
+}
+h1{
+padding-top: 5px;    
 }
 h2 {
     font-family: $f-familyh2;
-    color: #ee77b6;
+    color: #cbbbbf;
     text-shadow: .5px .5px 1px #000000;
+    
+    
 }
 h3 {
     font-family: $f-family2;
@@ -53,6 +59,16 @@ h4 {
 h5 {
     font-family: $f-family2;
 }
+
+
+
+
+
+
+
+
+
+
 ////////////ROWS////////////////
  .col-3 {
     background: $colorrow1;
@@ -65,32 +81,264 @@ h5 {
     //    overflow: auto;
     border-bottom: 5px solid #916D8E;
      text-align: center;
+     overflow: hidden;
 }
 //.col-3 box {
 //    text-align: center;
 //}
  .col-3 p {
     font-size: 14.1px;
+     color: #000000;
+     background-color: #fff;
+     padding-bottom: 5rem;
+     padding-top: 1.5rem;;
+     
+     
 }
-//ROW 1 box hover//
+
+.col-3 h3{
+    opacity: 0;
+    color: #fff;
+    -webkit-text-stroke-width: .1px;
+   -webkit-text-stroke-color: #333333;  
+}
+
+
+
+
+
+/////////////////ROW 1 box hover/////////////////////
+
+
  .box1:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+//    -webkit-transform: scale(1.1);
+//    -ms-transform: scale(1.1);
+//    transform: scale(1.1);
     opacity: 0.9;
 }
-.box2:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+
+//PARAGRAPH SLIDE UP//
+
+.box1:hover p{
+  -webkit-animation-name: slide-in;
+  -webkit-animation-duration: 0.25s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+  -webkit-animation-fill-mode: forwards;
+    opacity: 1;
+
+}
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@-webkit-keyframes slide-in {
+    0% {
+        -webkit-transform: translate(0,300px);
+    }
+ 
+    100% {
+       -webkit-transform: translate(0, 0px);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translate(0, 150px);
+    }
+ 
+    100% {
+       -webkit-transform: translate(0, 300px);
+    }
+}
+
+
+
+.box1:hover .iconic{
+    max-width: 30px;
+    max-height: 30px;
+//    margin-left: 33%;
+    margin-top: .1rem;
+    opacity: 0;
+    -webkit-filter: blur(4px);
+transition: all 0.35s ease-in-out;
+}
+
+
+
+
+.box1:hover h3{
+    font-size: 3rem;
+  transition: all 0.35s ease-in-out;
+    opacity: 1;
+    
+}
+
+
+/////////////////ROW 2 box hover/////////////////////
+
+
+ .box2:hover {
+//    -webkit-transform: scale(1.1);
+//    -ms-transform: scale(1.1);
+//    transform: scale(1.1);
+    opacity: 0.9;
+     
+}
+
+//PARAGRAPH SLIDE UP//
+
+.box2:hover p{
+  -webkit-animation-name: slide-in;
+  -webkit-animation-duration: 0.25s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+  -webkit-animation-fill-mode: forwards;
+    opacity: 1;
+
+}
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@-webkit-keyframes slide-in {
+    0% {
+        -webkit-transform: translate(0,300px);
+    }
+ 
+    100% {
+       -webkit-transform: translate(0, 0px);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translate(0, 150px);
+    }
+ 
+    100% {
+       -webkit-transform: translate(0, 300px);
+    }
+}
+
+
+
+.box2:hover .iconic{
+    max-width: 30px;
+    max-height: 30px;
+//    margin-left: 33%;
+    margin-top: .1rem;
+    opacity: 0;
+    -webkit-filter: blur(4px);
+transition: all 0.35s ease-in-out;
+}
+
+
+
+
+.box2:hover h3{
+    font-size: 3rem;
+  transition: all 0.35s ease-in-out;
+    opacity: 1;
+    
+}
+
+
+
+
+
+
+
+
+
+/////////////////ROW 3 box hover/////////////////////
+
+
+ .box3:hover {
+//    -webkit-transform: scale(1.1);
+//    -ms-transform: scale(1.1);
+//    transform: scale(1.1);
     opacity: 0.9;
 }
-.box3:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: 0.9;
+
+//PARAGRAPH SLIDE UP//
+
+.box3:hover p{
+  -webkit-animation-name: slide-in;
+  -webkit-animation-duration: 0.25s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+  -webkit-animation-fill-mode: forwards;
+    opacity: 1;
+
 }
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@-webkit-keyframes slide-in {
+    0% {
+        -webkit-transform: translate(0,300px);
+    }
+ 
+    100% {
+       -webkit-transform: translate(0, 0px);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translate(0, 150px);
+    }
+ 
+    100% {
+       -webkit-transform: translate(0, 300px);
+    }
+}
+
+
+
+.box3:hover .iconic{
+    max-width: 30px;
+    max-height: 30px;
+//    margin-left: 33%;
+    margin-top: .1rem;
+    opacity: 0;
+    -webkit-filter: blur(4px);
+transition: all 0.35s ease-in-out;
+}
+
+
+
+
+.box3:hover h3{
+    font-size: 3rem;
+  transition: all 0.35s ease-in-out;
+    opacity: 1;
+    
+}
+
+
+
+
+
+
+
 .col-4 {
     background: $colorrow2;
     opacity: .92;
@@ -101,6 +349,7 @@ h5 {
     border-bottom: 5px solid #916D8E;
     // equalSpaced( $num_of_cols, $spacing, $width  )
     @include equalSpaced(4, 1%, 100%);
+    
 }
 .col-4 p {
     font-size: 13px;
@@ -148,11 +397,12 @@ h5 {
     background-color: #f7afff;
 }
 .iconic {
-    max-width: 70%;
-    max-height: 70%;
+    width: 10rem;
+    height: 10rem;
 //    margin-left: 33%;
-    margin-top: 1rem;
+    margin-top: 5rem;
     opacity: .8;
+    transition: all 0.10s linear;
 }
 
 
@@ -160,6 +410,15 @@ h5 {
 /*@MEDIA'S*/
 
 @media all and (min-width: 100px) and (max-width: 700px) {
+    
+    
+    
+    h2{
+        font-size: 1.35rem;
+    }
+    
+    
+    
     .col-3 {
         width: 98%;
         border-radius: 3rem;
@@ -173,15 +432,26 @@ h5 {
         
     }
     
+    .iconic {
+    max-width: 10rem;
+    max-height: 70%;
+//    margin-left: 33%;
+    margin-top: 3rem;
+    opacity: .8;
+}
+
+    
     .col-3 p {
         font-size: 11px;
-        ;
+     padding-top: .5rem;;
+     
+        
     }
     .btn {
         font-size: 9px;
         text-align: center;
         border-radius: .5rem;
-        margin-left: 20%;
+        margin-left: 2%;
         margin-bottom: 1rem;
         margin-top: 40px;
     }

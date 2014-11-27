@@ -4,7 +4,7 @@
 @import "sticky-footer";
 
 html {
-    background: #fff;
+    background: $colorBG;
     color: #000;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -16,18 +16,18 @@ html {
 .masthead {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
-    border-bottom-right-radius: 3rem;
-    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     text-align: center;
     height: 180px;
-    border-bottom: 5px solid #cbbbbf;
-    margin-top: 10px;
+    border-bottom: 2px solid #cbbbbf;
+    margin-top: -20px;
     margin-bottom: 25px;
     background-color: $colorhf;
 }
 body {
     //    background-image: url(../img/cube-bg.jpg);
-    background-color: #fff;
+    background-color: $colorBG;
     text-align: center;
     
 }
@@ -43,7 +43,7 @@ padding-top: 5px;
 }
 h2 {
     font-family: $f-familyh2;
-    color: #cbbbbf;
+    color: #F494F7;
     text-shadow: .5px .5px 1px #000000;
     
     
@@ -89,7 +89,7 @@ h5 {
  .col-3 p {
     font-size: 14.1px;
      color: #000000;
-     background-color: #fff;
+     background-color: $ColorBGp;
      padding-bottom: 5rem;
      padding-top: 1.5rem;;
      
@@ -349,8 +349,10 @@ transition: all 0.35s ease-in-out;
     border-bottom: 5px solid #916D8E;
     // equalSpaced( $num_of_cols, $spacing, $width  )
     @include equalSpaced(4, 1%, 100%);
-    
+     border: none;
 }
+
+
 .col-4 p {
     font-size: 13px;
     padding-left: 10px;
@@ -369,6 +371,7 @@ transition: all 0.35s ease-in-out;
     box-shadow: 1px 1px #916D8E, 2px 2px #916D8E, 3px 3px #916D8E;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
+    background-color: $colorrow2hover;
 }
 .col-4:hover p,
 {
@@ -391,10 +394,10 @@ transition: all 0.35s ease-in-out;
     margin-bottom: 1rem;
     margin-top: 50px;
     background-color: #fff;
-    color: $colorrow2;
+    color: #000000;
 }
 .btn:hover {
-    background-color: #f7afff;
+    background-color: #cbbbbf;
 }
 .iconic {
     width: 10rem;
@@ -421,7 +424,7 @@ transition: all 0.35s ease-in-out;
     
     .col-3 {
         width: 98%;
-        border-radius: 3rem;
+        border-radius: 1rem;
         background-color: $colorrow1;
         float: left;
         height: 360px;
@@ -457,7 +460,7 @@ transition: all 0.35s ease-in-out;
     }
     .col-4 {
         width: 48.75%;
-        border-radius: 2rem;
+        border-radius: .5rem;
         position: relative;
         background-color: $colorrow2;
         float: left;

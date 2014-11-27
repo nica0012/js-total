@@ -1,32 +1,37 @@
-.foot{
+.foot {
     background-color: $colorhf;
     width: 100%;
     clear: both;
     text-align: center;
-    left: 0;
-    bottom: 0;
-    border-top-right-radius:2rem;
-    border-top-left-radius:2rem;   
-    border-top: 5px solid #916D8E;
-    margin-top: 41.5rem;
-
-    
+//    left: 0;
+//    bottom: 0;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    margin-top: 42rem;
+    padding-bottom: 1px;
 }
 
 
+.foot h5{
+ padding-top: 3rem;   
+}
+    
+    
+
 /*@MEDIA'S*/
+
 @media all and (min-width: 100px) and (max-width: 700px) {
- 
-    .foot{
-    background-color: $colorhf;
-    width: 100%;
-    clear: both;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    border-top-right-radius:2rem;
-    border-top-left-radius:2rem;   
-    border-top: 5px solid #916D8E;
-    margin-top: 82rem;
+    .foot {
+        background-color: $colorhf;
+        width: 100%;
+        clear: both;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+        border-top: 5px solid #916D8E;
+        margin-top: 82rem;
+        padding-bottom: 1px;
     }
 }

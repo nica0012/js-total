@@ -487,7 +487,6 @@ h5 {
   opacity: .8;
   transition: all 0.10s linear; }
 
-/*@MEDIA'S*/
 @media all and (min-width: 100px) and (max-width: 700px) {
   h2 {
     font-size: 1.35rem; }
@@ -510,7 +509,7 @@ h5 {
     opacity: .8; }
 
   .col-3 p {
-    font-size: 11px;
+    font-size: 13px;
     padding-top: .5rem; }
 
   .btn {

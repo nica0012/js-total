@@ -3,7 +3,8 @@
 @import "mixins";
 @import "sticky-footer";
 
-html {
+
+ html {
     background: $colorBG;
     color: #000;
     -webkit-text-size-adjust: 100%;
@@ -29,7 +30,6 @@ body {
     //    background-image: url(../img/cube-bg.jpg);
     background-color: $colorBG;
     text-align: center;
-    
 }
 p {
     padding-left: 10px;
@@ -38,15 +38,13 @@ p {
     font-family: $f-family2;
     opacity: 0;
 }
-h1{
-padding-top: 5px;    
+h1 {
+    padding-top: 5px;
 }
 h2 {
     font-family: $f-familyh2;
     color: #F494F7;
     text-shadow: .5px .5px 1px #000000;
-    
-    
 }
 h3 {
     font-family: $f-family2;
@@ -61,15 +59,8 @@ h5 {
 }
 
 
-
-
-
-
-
-
-
-
 ////////////ROWS////////////////
+
  .col-3 {
     background: $colorrow1;
     opacity: .5;
@@ -80,265 +71,208 @@ h5 {
     @include equalSpaced(3, 3%, 100%);
     //    overflow: auto;
     border-bottom: 5px solid #916D8E;
-     text-align: center;
-     overflow: hidden;
+    text-align: center;
+    overflow: hidden;
 }
 //.col-3 box {
 //    text-align: center;
 //}
  .col-3 p {
     font-size: 14.1px;
-     color: #000000;
-     background-color: $ColorBGp;
-     padding-bottom: 5rem;
-     padding-top: 1.5rem;;
-     
-     
+    color: #000000;
+    background-color: $ColorBGp;
+    padding-bottom: 5rem;
+    padding-top: 1.5rem;
+    ;
 }
-
-.col-3 h3{
+.col-3 h3 {
     opacity: 0;
     color: #fff;
     -webkit-text-stroke-width: .1px;
-   -webkit-text-stroke-color: #333333;  
+    -webkit-text-stroke-color: #333333;
 }
-
-
-
 
 
 /////////////////ROW 1 box hover/////////////////////
 
-
  .box1:hover {
-//    -webkit-transform: scale(1.1);
-//    -ms-transform: scale(1.1);
-//    transform: scale(1.1);
+    //    -webkit-transform: scale(1.1);
+    //    -ms-transform: scale(1.1);
+    //    transform: scale(1.1);
     opacity: 0.9;
 }
-
 //PARAGRAPH SLIDE UP//
-
-.box1:hover p{
-  -webkit-animation-name: slide-in;
-  -webkit-animation-duration: 0.25s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-delay: 0;
-  -webkit-animation-fill-mode: forwards;
+ .box1:hover p {
+    -webkit-animation-name: slide-in;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0;
+    -webkit-animation-fill-mode: forwards;
     opacity: 1;
-
 }
-
 @-webkit-keyframes fade-in {
-  0%   { opacity: 0; }
-  80% { opacity: 0; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-
-
 @-webkit-keyframes slide-in {
     0% {
-        -webkit-transform: translate(0,300px);
+        -webkit-transform: translate(0, 300px);
     }
- 
     100% {
-       -webkit-transform: translate(0, 0px);
+        -webkit-transform: translate(0, 0px);
     }
 }
-
 @-webkit-keyframes slide-out {
     0% {
         -webkit-transform: translate(0, 150px);
     }
- 
     100% {
-       -webkit-transform: translate(0, 300px);
+        -webkit-transform: translate(0, 300px);
     }
 }
-
-
-
-.box1:hover .iconic{
+.box1:hover .iconic {
     max-width: 30px;
     max-height: 30px;
-//    margin-left: 33%;
+    //    margin-left: 33%;
     margin-top: .1rem;
     opacity: 0;
     -webkit-filter: blur(4px);
-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
-
-
-
-
-.box1:hover h3{
+.box1:hover h3 {
     font-size: 3rem;
-  transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
     opacity: 1;
-    
 }
 
 
 /////////////////ROW 2 box hover/////////////////////
 
-
  .box2:hover {
-//    -webkit-transform: scale(1.1);
-//    -ms-transform: scale(1.1);
-//    transform: scale(1.1);
+    //    -webkit-transform: scale(1.1);
+    //    -ms-transform: scale(1.1);
+    //    transform: scale(1.1);
     opacity: 0.9;
-     
 }
-
 //PARAGRAPH SLIDE UP//
-
-.box2:hover p{
-  -webkit-animation-name: slide-in;
-  -webkit-animation-duration: 0.25s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-delay: 0;
-  -webkit-animation-fill-mode: forwards;
+ .box2:hover p {
+    -webkit-animation-name: slide-in;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0;
+    -webkit-animation-fill-mode: forwards;
     opacity: 1;
-
 }
-
 @-webkit-keyframes fade-in {
-  0%   { opacity: 0; }
-  80% { opacity: 0; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-
-
 @-webkit-keyframes slide-in {
     0% {
-        -webkit-transform: translate(0,300px);
+        -webkit-transform: translate(0, 300px);
     }
- 
     100% {
-       -webkit-transform: translate(0, 0px);
+        -webkit-transform: translate(0, 0px);
     }
 }
-
 @-webkit-keyframes slide-out {
     0% {
         -webkit-transform: translate(0, 150px);
     }
- 
     100% {
-       -webkit-transform: translate(0, 300px);
+        -webkit-transform: translate(0, 300px);
     }
 }
-
-
-
-.box2:hover .iconic{
+.box2:hover .iconic {
     max-width: 30px;
     max-height: 30px;
-//    margin-left: 33%;
+    //    margin-left: 33%;
     margin-top: .1rem;
     opacity: 0;
     -webkit-filter: blur(4px);
-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
-
-
-
-
-.box2:hover h3{
+.box2:hover h3 {
     font-size: 3rem;
-  transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
     opacity: 1;
-    
 }
-
-
-
-
-
-
-
-
 
 /////////////////ROW 3 box hover/////////////////////
 
-
  .box3:hover {
-//    -webkit-transform: scale(1.1);
-//    -ms-transform: scale(1.1);
-//    transform: scale(1.1);
+    //    -webkit-transform: scale(1.1);
+    //    -ms-transform: scale(1.1);
+    //    transform: scale(1.1);
     opacity: 0.9;
 }
-
 //PARAGRAPH SLIDE UP//
-
-.box3:hover p{
-  -webkit-animation-name: slide-in;
-  -webkit-animation-duration: 0.25s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-delay: 0;
-  -webkit-animation-fill-mode: forwards;
+ .box3:hover p {
+    -webkit-animation-name: slide-in;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0;
+    -webkit-animation-fill-mode: forwards;
     opacity: 1;
-
 }
-
 @-webkit-keyframes fade-in {
-  0%   { opacity: 0; }
-  80% { opacity: 0; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-
-
 @-webkit-keyframes slide-in {
     0% {
-        -webkit-transform: translate(0,300px);
+        -webkit-transform: translate(0, 300px);
     }
- 
     100% {
-       -webkit-transform: translate(0, 0px);
+        -webkit-transform: translate(0, 0px);
     }
 }
-
 @-webkit-keyframes slide-out {
     0% {
         -webkit-transform: translate(0, 150px);
     }
- 
     100% {
-       -webkit-transform: translate(0, 300px);
+        -webkit-transform: translate(0, 300px);
     }
 }
-
-
-
-.box3:hover .iconic{
+.box3:hover .iconic {
     max-width: 30px;
     max-height: 30px;
-//    margin-left: 33%;
+    //    margin-left: 33%;
     margin-top: .1rem;
     opacity: 0;
     -webkit-filter: blur(4px);
-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
-
-
-
-
-.box3:hover h3{
+.box3:hover h3 {
     font-size: 3rem;
-  transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
     opacity: 1;
-    
 }
-
-
-
-
-
-
-
 .col-4 {
     background: $colorrow2;
     opacity: .92;
@@ -349,10 +283,8 @@ transition: all 0.35s ease-in-out;
     border-bottom: 5px solid #916D8E;
     // equalSpaced( $num_of_cols, $spacing, $width  )
     @include equalSpaced(4, 1%, 100%);
-     border: none;
+    border: none;
 }
-
-
 .col-4 p {
     font-size: 13px;
     padding-left: 10px;
@@ -384,7 +316,11 @@ transition: all 0.35s ease-in-out;
     opacity: 1;
     transform: scale(1.2)
 }
+
+
 ////////////BOX ITEM ALIGNMENT////////////
+
+
 .btn {
     font-size: 12px;
     text-align: center;
@@ -402,7 +338,7 @@ transition: all 0.35s ease-in-out;
 .iconic {
     width: 10rem;
     height: 10rem;
-//    margin-left: 33%;
+    //    margin-left: 33%;
     margin-top: 5rem;
     opacity: .8;
     transition: all 0.10s linear;
@@ -410,18 +346,12 @@ transition: all 0.35s ease-in-out;
 
 
 
-/*@MEDIA'S*/
+//////////*@MEDIA'S*////////////
 
 @media all and (min-width: 100px) and (max-width: 700px) {
-    
-    
-    
-    h2{
+    h2 {
         font-size: 1.35rem;
     }
-    
-    
-    
     .col-3 {
         width: 98%;
         border-radius: 1rem;
@@ -432,23 +362,18 @@ transition: all 0.35s ease-in-out;
         margin-bottom: 15px;
         border-bottom: 5px solid #916D8E;
         height: 250px;
-        
     }
-    
     .iconic {
-    max-width: 10rem;
-    max-height: 70%;
-//    margin-left: 33%;
-    margin-top: 3rem;
-    opacity: .8;
-}
-
-    
+        max-width: 10rem;
+        max-height: 70%;
+        //    margin-left: 33%;
+        margin-top: 3rem;
+        opacity: .8;
+    }
     .col-3 p {
-        font-size: 11px;
-     padding-top: .5rem;;
-     
-        
+        font-size: 13px;
+        padding-top: .5rem;
+        ;
     }
     .btn {
         font-size: 9px;

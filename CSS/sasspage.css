@@ -236,7 +236,8 @@ html {
   background-color: #694E66; }
 
 body {
-  background-color: #fff; }
+  background-color: #fff;
+  text-align: center; }
 
 p {
   padding-left: 10px;
@@ -268,7 +269,8 @@ h5 {
   border-radius: 1rem;
   width: 31.33333%;
   margin-left: 3%;
-  border-bottom: 5px solid #916D8E; }
+  border-bottom: 5px solid #916D8E;
+  text-align: center; }
   .col-3:first-child {
     margin-left: 0; }
 
@@ -354,7 +356,6 @@ h5 {
 .iconic {
   max-width: 70%;
   max-height: 70%;
-  margin-left: 33%;
   margin-top: 1rem;
   opacity: .8; }
 

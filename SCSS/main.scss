@@ -2,38 +2,34 @@
 @import "normalize";
 @import "mixins";
 @import "sticky-footer";
- 
 
 html {
-  background: #fff;
-  color: #000;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
-
-.wrapper {
-  max-width: 1020px;
-
-  margin: 0 auto; }
-
-
-.masthead {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-right-radius: 3rem;
-  border-bottom-left-radius: 3rem;
-
-  text-align: center;
-  height: 180px;
-  border-bottom: 5px solid #916D8E;
-  margin-top: 10px;
-  margin-bottom: 25px; 
-  background-color: $colorhf;
+    background: #fff;
+    color: #000;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
-
-
-body { 
-//    background-image: url(../img/cube-bg.jpg);
+.wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.masthead {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    text-align: center;
+    height: 180px;
+    border-bottom: 5px solid #916D8E;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    background-color: $colorhf;
+}
+body {
+    //    background-image: url(../img/cube-bg.jpg);
     background-color: #fff;
+    text-align: center;
+    
 }
 p {
     padding-left: 10px;
@@ -41,14 +37,10 @@ p {
     text-align: center;
     font-family: $f-family2;
 }
-
-h2{
+h2 {
     font-family: $f-familyh2;
     color: #ee77b6;
     text-shadow: .5px .5px 1px #000000;
-    
-    
-    
 }
 h3 {
     font-family: $f-family2;
@@ -58,18 +50,11 @@ h4 {
     font-family: $f-family2;
     text-align: center;
 }
-
-h5{
+h5 {
     font-family: $f-family2;
-    
 }
-
-
 ////////////ROWS////////////////
-
-
-
-.col-3 {
+ .col-3 {
     background: $colorrow1;
     opacity: .5;
     height: 320px;
@@ -77,48 +62,35 @@ h5{
     border-radius: 1rem;
     // equalSpaced( $num_of_cols, $spacing, $width  )
     @include equalSpaced(3, 3%, 100%);
-//    overflow: auto;
+    //    overflow: auto;
     border-bottom: 5px solid #916D8E;
+     text-align: center;
 }
 //.col-3 box {
 //    text-align: center;
 //}
-
-.col-3 p{
+ .col-3 p {
     font-size: 14.1px;
-    
-    
-    
-    
 }
 //ROW 1 box hover//
-    .box1:hover{
-        
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        opacity:0.9;
-        
+ .box1:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.9;
 }
-
-    .box2:hover{
-        
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        opacity:0.9;
+.box2:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.9;
 }
-
-    .box3:hover{
-        
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        opacity:0.9;
+.box3:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.9;
 }
-
-
-
 .col-4 {
     background: $colorrow2;
     opacity: .92;
@@ -130,7 +102,6 @@ h5{
     // equalSpaced( $num_of_cols, $spacing, $width  )
     @include equalSpaced(4, 1%, 100%);
 }
-
 .col-4 p {
     font-size: 13px;
     padding-left: 10px;
@@ -138,7 +109,6 @@ h5{
     text-align: center;
     opacity: .1;
 }
-
 .col-4 h4 {
     font-size: 15px;
     padding-left: 10px;
@@ -146,30 +116,22 @@ h5{
     text-align: center;
     opacity: .1;
 }
-
-
 .col-4:hover {
-        box-shadow:
-                1px 1px #916D8E,
-                2px 2px #916D8E,
-                3px 3px #916D8E;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
+    box-shadow: 1px 1px #916D8E, 2px 2px #916D8E, 3px 3px #916D8E;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
 }
-
-.col-4:hover p,{
+.col-4:hover p,
+{
     transition: all 0.3s linear;
     opacity: 1;
 }
-
-.col-4:hover h4,{
+.col-4:hover h4,
+{
     transition: all 0.3s linear;
     opacity: 1;
     transform: scale(1.2)
 }
-
-
-
 ////////////BOX ITEM ALIGNMENT////////////
 .btn {
     font-size: 12px;
@@ -182,94 +144,56 @@ h5{
     background-color: #fff;
     color: $colorrow2;
 }
-    .btn:hover{
-        background-color: #f7afff;
-        
-        
-    }
-
-.iconic{
+.btn:hover {
+    background-color: #f7afff;
+}
+.iconic {
     max-width: 70%;
     max-height: 70%;
-    margin-left: 33%;
+//    margin-left: 33%;
     margin-top: 1rem;
     opacity: .8;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*@MEDIA'S*/
+
 @media all and (min-width: 100px) and (max-width: 700px) {
- 
-.col-3 {
-    width: 98%;
-    border-radius: 3rem;
-    background-color: $colorrow1;
-    float: left;
-    height: 360px;
-    margin: 0 auto;
-    margin-bottom: 15px;
+    .col-3 {
+        width: 98%;
+        border-radius: 3rem;
+        background-color: $colorrow1;
+        float: left;
+        height: 360px;
+        margin: 0 auto;
+        margin-bottom: 15px;
         border-bottom: 5px solid #916D8E;
-
-    height: 250px;
-    
+        height: 250px;
+        
     }
-    
-.col-3 p{
-    font-size: 11px;;
-    
-}
-    
+    .col-3 p {
+        font-size: 11px;
+        ;
+    }
     .btn {
-    font-size: 9px;
-    text-align: center;
-    border-radius: .5rem;
-    
-    margin-left: 20%;
-    margin-bottom: 1rem;
-    margin-top: 40px;
-        
-        
+        font-size: 9px;
+        text-align: center;
+        border-radius: .5rem;
+        margin-left: 20%;
+        margin-bottom: 1rem;
+        margin-top: 40px;
     }
-    
-     .col-4 {
-    width: 48.75%;
-    border-radius: 2rem;
-    position: relative;
-    background-color: $colorrow2;
-    float: left;
-    height: 225px;
-    margin: 0.5%;
-    margin-bottom: 55px;
-    border-bottom: 5px solid rgba(239, 239, 239, 0.25);
-    margin-bottom: 5px; }
-    text-align: center;
-    margin: 6px; 
+    .col-4 {
+        width: 48.75%;
+        border-radius: 2rem;
+        position: relative;
+        background-color: $colorrow2;
+        float: left;
+        height: 225px;
+        margin: 0.5%;
+        margin-bottom: 55px;
+        border-bottom: 5px solid rgba(239, 239, 239, 0.25);
+        margin-bottom: 5px;
     }
-
- 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-@media all and (min-width: 701px) {
- 
+    text-align:center;
+    margin:6px;
 }
+@media all and (min-width: 701px) {}
